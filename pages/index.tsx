@@ -51,10 +51,10 @@ const typeAnimation = (inst: any) => {
     .pause(1500)
     .move(-10, {delay: 100})
     .delete(8)
-    .type("Mobile Application")
+    .type("Mobile App")
     .move(null, {to: "END"})
     .pause(1500)
-    .delete(28)
+    .delete(20)
     .pause(250)
     .type("Devops Engineer")
     .pause(1500)
@@ -65,7 +65,7 @@ const typeAnimation = (inst: any) => {
     .type("Solutions Architect")
     .pause(1500)
     .delete(21)
-    .type("Full Stack Software Engineer ");
+    .type("Full Stack Engineer");
   return inst
 }
 
