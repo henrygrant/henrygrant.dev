@@ -8,7 +8,6 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faLinkedin, faStrava, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const MainContainer = styled.div`
-  font-family: 'Fira Code', monospace;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -28,6 +27,7 @@ const Heading = styled.h1`
 `
 
 const Subtext = styled.h2`
+  height: 31px;
   font-weight: normal;
   margin: 0 0 1.2rem;
   display: flex;
