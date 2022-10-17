@@ -4,6 +4,7 @@ import Head from 'next/head'
 import TypeIt from "typeit-react" 
 import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faLinkedin, faStrava, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const MainContainer = styled.div`
@@ -39,7 +40,7 @@ const Links = styled.div`
   justify-content: space-between
 `
 
-const typeAnimation = inst => {
+const typeAnimation = (inst: any) => {
   inst
     .type("Front End Developer")
     .pause(1500)
@@ -95,6 +96,9 @@ const Home: NextPage = () => {
             </a>
             <a href="https://github.com/henrygrant" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faGithub} size="2x" />
+            </a>
+            <a href="mailto:me@henrygrant.dev" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faEnvelope} size="2x" />
             </a>
           </Links>
         </InnerContainer>
