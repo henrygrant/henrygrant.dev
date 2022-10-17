@@ -29,7 +29,7 @@ const Heading = styled.h1`
 const Subtext = styled.h2`
   height: 31px;
   font-weight: normal;
-  margin: 0 0 1.2rem;
+  margin: 0 0 .8rem;
   display: flex;
   justify-content: center;
 `
