@@ -1,0 +1,77 @@
+<script lang="ts">
+	import { Map, Feature, View } from 'ol';
+	import TileLayer from 'ol/layer/Tile';
+	import XYZ from 'ol/source/XYZ';
+	import { fromLonLat } from 'ol/proj';
+	import VectorLayer from 'ol/layer/Vector';
+	import VectorSource from 'ol/source/Vector';
+	import { Style, Stroke } from 'ol/style';
+	import Polyline from 'ol/format/Polyline';
+
+	export let activities: any[];
+    export let theme: 'dark' | 'light';
+
+    let map: Map | null = null;
+
+    const mapConfig = {
+        dark: {
+            color: '#fff',
+            width: 2,
+            theme: 'https://a.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}@2x.png'
+        },
+        light: {
+            color: '#000',
+            width: 2,
+            theme: 'https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png'
+        }
+    }
+
+	const setupMap = (node: HTMLDivElement, _id: string) => {
+		map = new Map({
+			target: 'map',
+			view: new View({
+				center: fromLonLat([-73.94186, 40.724545]),
+				zoom: 11
+			}),
+			controls: []
+		});
+		map.addLayer(
+			new TileLayer({
+				source: new XYZ({
+					url: mapConfig[theme].theme,
+					crossOrigin: 'anonymous'
+				})
+			})
+		);
+		map.addLayer(
+			new VectorLayer({
+				source: new VectorSource({
+					features: activities.map((activity) =>
+						new Polyline({
+							factor: 1e5
+						}).readFeature(activity.polyline, {
+							dataProjection: 'EPSG:4326',
+							featureProjection: 'EPSG:3857'
+						})
+					)
+				}),
+				style: new Style({
+					stroke: new Stroke({
+						color: mapConfig[theme].color,
+						width: mapConfig[theme].width
+					})
+				})
+			})
+		);
+		return {
+			destroy() {
+				if (map) {
+					map.setTarget(undefined);
+					map = null;
+				}
+			}
+		};
+	};
+</script>
+
+<div id="map" use:setupMap={'map'} />
