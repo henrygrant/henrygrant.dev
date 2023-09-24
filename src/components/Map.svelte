@@ -9,29 +9,29 @@
 	import Polyline from 'ol/format/Polyline';
 
 	export let activities: any[];
-    export let theme: 'dark' | 'light';
+	export let theme: 'dark' | 'light';
 
-    let map: Map | null = null;
+	let map: Map | null = null;
 
-    const mapConfig = {
-        dark: {
-            color: '#fff',
-            width: 2,
-            theme: 'https://a.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}@2x.png'
-        },
-        light: {
-            color: '#000',
-            width: 2,
-            theme: 'https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png'
-        }
-    }
+	const mapConfig = {
+		dark: {
+			color: '#c3c3c3',
+			width: 1,
+			theme: 'https://a.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}@2x.png'
+		},
+		light: {
+			color: '#000',
+			width: 1,
+			theme: 'https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png'
+		}
+	};
 
 	const setupMap = (node: HTMLDivElement, _id: string) => {
 		map = new Map({
 			target: 'map',
 			view: new View({
 				center: fromLonLat([-73.94186, 40.724545]),
-				zoom: 11
+				zoom: 12
 			}),
 			controls: []
 		});
@@ -75,3 +75,12 @@
 </script>
 
 <div id="map" use:setupMap={'map'} />
+
+<style>
+	#map {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: -1;
+	}
+</style>

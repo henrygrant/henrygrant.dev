@@ -3,6 +3,9 @@
 	import ThemeToggleButton from '../components/ThemeToggleButton.svelte';
 	import { onNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
+	import Map from '../components/Map.svelte';
+
+	export let data;
 
 	onNavigate((navigation) => {
 		// @ts-ignore
@@ -19,6 +22,7 @@
 </script>
 
 <div class="container">
+	<Map activities={data.activities} theme="dark" />
 	<header>
 		<nav>
 			<ul>
