@@ -1,45 +1,20 @@
 <script>
 	import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 	import Fa from "svelte-fa";
-    import {browser} from "$app/environment"
-
-    let darkMode = true
-
-    // function toggle() {
-    //     window.document.body.classList.toggle('dark-theme')
-    // }
-
-    function toggle() {
-        darkMode = !darkMode;
-        localStorage.setItem('theme', darkMode ? 'dark' : 'light');
-        darkMode
-			? window.document.body.classList.add('dark-theme')
-			: window.document.body.classList.remove('dark-theme');
-        if (browser) {
-            if (
-                localStorage.theme === 'dark' ||
-                (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-            ) {
-                window.document.body.classList.add('dark-theme');
-                darkMode = true;
-                console.log('beep')
-            } else {
-                window.document.body.classList.remove('dark-theme');
-                darkMode = false;
-                console.log('boop')
-            }
-        }
-    }
-
-
+    import { theme } from '$lib/store'
 </script>
-<button on:click={toggle}>
-    {#if darkMode}
-        <Fa icon={faSun} size="2x" fw/>
-    {:else}
+
+
+{#if $theme === 'light'}
+    <button on:click={() => $theme = 'dark'}>
         <Fa icon={faMoon} size="2x" fw/>
-    {/if}
-</button>
+    </button>
+{:else}
+    <button on:click={() => $theme = 'light'}>
+        <Fa icon={faSun} size="2x" fw/>
+    </button>
+{/if}
+
 <style>
     button {
         background-color: transparent;
@@ -48,8 +23,5 @@
         padding: 0.5rem;
         text-transform: uppercase;
         cursor: pointer;
-    }
-    :global(body.dark-theme) button {
-        color: #d4d6db;
     }
 </style>

@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
-
-
 *,
 *::before,
 *::after {
@@ -9,7 +7,7 @@
 }
 
 html {
-	font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+	font-size: 100%; /* (62.5/100) * 16px = 10px */
 	-webkit-text-size-adjust: none; /* for iOS Safari */
 	text-size-adjust: none; /* for other mobile browsers */
 	font-family: 'Cabin', sans-serif;
@@ -19,14 +17,9 @@ body {
 	height: 100vh;
 	max-height: -webkit-fill-available;
 	margin: 0;
-	background-color: var(--lighter);
-    background-color: #f2eee2;
-    color: #000000;
-    transition: background-color 0.3s
-}
-body.dark-theme {
-    background-color: #242424;
-    color: #d4d6db;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	transition: background-color 0.3s;
 }
 
 img {
@@ -52,13 +45,8 @@ article ul {
 }
 
 a {
-	/* Places underlines below the descenders */
-	text-underline-position: under;
-
-	/* Sets the thickness as a percentage of the font size */
-	text-decoration-thickness: 8;
+	text-decoration: none;
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
 	html {
@@ -69,7 +57,6 @@ a {
 :focus:not(:focus-visible) {
 	outline: none;
 }
-
 
 label,
 button,

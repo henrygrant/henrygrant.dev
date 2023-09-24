@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Map, Feature, View } from 'ol';
+	import { Map, View } from 'ol';
 	import TileLayer from 'ol/layer/Tile';
 	import XYZ from 'ol/source/XYZ';
 	import { fromLonLat } from 'ol/proj';
@@ -7,38 +7,40 @@
 	import VectorSource from 'ol/source/Vector';
 	import { Style, Stroke } from 'ol/style';
 	import Polyline from 'ol/format/Polyline';
+	import {theme} from '$lib/store'
 
 	export let activities: any[];
-	export let theme: 'dark' | 'light';
 
 	let map: Map | null = null;
 
 	const mapConfig = {
 		dark: {
-			color: '#c3c3c3',
+			color: '#4f4f4f',
 			width: 1,
 			theme: 'https://a.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}@2x.png'
 		},
 		light: {
-			color: '#000',
+			color: '#aeabab',
 			width: 1,
 			theme: 'https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png'
 		}
 	};
 
+	$: themeToUse = $theme === 'system' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : $theme
+
 	const setupMap = (node: HTMLDivElement, _id: string) => {
 		map = new Map({
 			target: 'map',
 			view: new View({
-				center: fromLonLat([-73.94186, 40.724545]),
-				zoom: 12
+				center: fromLonLat([-73.96186, 40.744545]),
+				zoom: window.screen.width > 750 ? 12.75 : 12
 			}),
 			controls: []
 		});
 		map.addLayer(
 			new TileLayer({
 				source: new XYZ({
-					url: mapConfig[theme].theme,
+					url: mapConfig[themeToUse].theme,
 					crossOrigin: 'anonymous'
 				})
 			})
@@ -57,8 +59,8 @@
 				}),
 				style: new Style({
 					stroke: new Stroke({
-						color: mapConfig[theme].color,
-						width: mapConfig[theme].width
+						color: mapConfig[themeToUse].color,
+						width: mapConfig[themeToUse].width
 					})
 				})
 			})
@@ -74,13 +76,15 @@
 	};
 </script>
 
-<div id="map" use:setupMap={'map'} />
+{#key themeToUse}
+	<div id="map" use:setupMap={'map'}/>
+{/key}
 
 <style>
 	#map {
 		width: 100%;
 		height: 100%;
 		position: absolute;
-		z-index: -1;
+		z-index: -2;
 	}
 </style>

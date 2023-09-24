@@ -14,22 +14,22 @@
 	<h1>Henry Grant</h1>
 	<div class="links">
 		<a href="https://www.instagram.com/henry_grant_/" target="_blank" rel="noreferrer">
-			<Fa icon={faInstagram} size="2x" />
+			<Fa icon={faInstagram} size="3x" />
 		</a>
 		<a href="https://www.twitter.com/henry_grant_/" target="_blank" rel="noreferrer">
-			<Fa icon={faTwitter} size="2x" />
+			<Fa icon={faTwitter} size="3x" />
 		</a>
 		<a href="https://www.strava.com/athletes/1542509" target="_blank" rel="noreferrer">
-			<Fa icon={faStrava} size="2x" />
+			<Fa icon={faStrava} size="3x" />
 		</a>
 		<a href="https://github.com/henrygrant" target="_blank" rel="noreferrer">
-			<Fa icon={faGithub} size="2x" />
+			<Fa icon={faGithub} size="3x" />
 		</a>
 		<a href="https://www.linkedin.com/in/henry-grant-662227169/" target="_blank" rel="noreferrer">
-			<Fa icon={faLinkedin} size="2x" />
+			<Fa icon={faLinkedin} size="3x" />
 		</a>
 		<a href="mailto:me@henrygrant.dev" target="_blank" rel="noreferrer">
-			<Fa icon={faEnvelope} size="2x" />
+			<Fa icon={faEnvelope} size="3x" />
 		</a>
 	</div>
 </div>
@@ -44,10 +44,11 @@
 	}
 	h1 {
 		margin: 1rem;
+		font-size: 32px;
 	}
 	.links {
 		display: flex;
-		gap: 1rem;
+		gap: 2rem;
 	}
 	.links a {
 		color: inherit;
