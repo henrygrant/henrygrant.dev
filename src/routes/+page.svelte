@@ -53,4 +53,9 @@
 	.links a {
 		color: inherit;
 	}
+	@media only screen and (max-width: 750px) {
+		.links a {
+			font-size: 0.7rem;
+		}
+	}
 </style>
