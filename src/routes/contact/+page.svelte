@@ -27,6 +27,14 @@
 	}, 7000);
 </script>
 
+<svelte:head>
+	<title>Contact | henrygrant.dev</title>
+
+	<meta property="og:site_name" content="henrygrant.dev" />
+	<meta property="og:title" content="Contact" />
+	<meta property="og:description" content="Contact Henry Grant" />
+</svelte:head>
+
 <div class="container">
 	<div class={`message ${showMessage1 ? 'fadeIn' : 'invisible'}`}>
 		Didn't you see the contact icons on the home page?

@@ -6,6 +6,14 @@
 	const { blogPosts } = data;
 </script>
 
+<svelte:head>
+	<title>Blog Posts | henrygrant.dev</title>
+
+	<meta property="og:site_name" content="henrygrant.dev" />
+	<meta property="og:title" content="Blog Posts" />
+	<meta property="og:description" content="Blog posts written by Henry Grant" />
+</svelte:head>
+
 <div class="container">
 	<h1>Blog</h1>
 	{#each blogPosts as post, i}

@@ -10,6 +10,14 @@
 	import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 </script>
 
+<svelte:head>
+	<title>henrygrant.dev</title>
+
+	<meta property="og:site_name" content="henrygrant.dev" />
+	<meta property="og:title" content="Home" />
+	<meta property="og:description" content="Henry's personal site and blog" />
+</svelte:head>
+
 <div class="container">
 	<h1>Henry Grant</h1>
 	<div class="links">

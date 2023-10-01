@@ -1,3 +1,11 @@
+<svelte:head>
+	<title>About | henrygrant.dev</title>
+
+	<meta property="og:site_name" content="henrygrant.dev" />
+	<meta property="og:title" content="About" />
+	<meta property="og:description" content="About Henry Grant" />
+</svelte:head>
+
 <div class="container">
 	<h1>About</h1>
 	<section>
