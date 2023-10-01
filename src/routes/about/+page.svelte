@@ -1,18 +1,11 @@
-<script>
-	const yearsSince = () => {
-		const then = new Date();
-	};
-</script>
-
 <div class="container">
 	<h1>About</h1>
 	<section>
-		<h2>Henry Grant</h2>
 		<p>
-			I'm a {new Date().getFullYear() - 1994} year old dev living in Brooklyn, NY. I'm into riding bikes,
-			running, finding the best chicken sandwich in NYC, woodworking (poorly), and software engineering.
-			I volunteer for <a href="https://nycbikeandbrew.com/">NYC Bike + Brew</a>, a group that takes
-			people on bike rides to breweries or other interesting places in around NYC.
+			I moved to New York City in 2022 and currently reside in Greenpoint. I'm into riding bikes,
+			running, woodworking, and building software. I volunteer for
+			<a href="https://nycbikeandbrew.com/">NYC Bike + Brew</a>, a group that takes people on bike
+			rides to breweries or other interesting places in around NYC.
 		</p>
 		<p>
 			I love building things, and I love hanging out with other people who love building things. If
@@ -181,12 +174,10 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		margin: 1rem;
 		text-align: justify;
 		max-width: 800px;
 		overflow-y: auto;
-		margin: 0 auto 6rem;
-		padding: 0 1rem;
+		margin: 0 auto 5rem;
 	}
 	h2 {
 		margin: 0;
@@ -196,7 +187,6 @@
 		align-items: center;
 		gap: 1rem;
 	}
-
 	section:not(:last-child) {
 		margin-bottom: 1rem;
 	}

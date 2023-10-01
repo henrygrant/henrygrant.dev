@@ -1,6 +1,7 @@
 @media (prefers-color-scheme: light) {
 	:root {
 		--text-color: #000;
+		--link-color: #5b5b5b;
 		--background-color: #fff;
 		--tint-color: rgba(255, 255, 255, 0.6);
 	}
@@ -9,6 +10,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--text-color: #fff;
+		--link-color: #a1fc80;
 		--background-color: #000;
 		--tint-color: rgba(0, 0, 0, 0.6);
 	}

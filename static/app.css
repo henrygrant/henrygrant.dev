@@ -45,7 +45,7 @@ article ul {
 }
 
 a {
-	text-decoration: none;
+	color: inherit;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -66,4 +66,26 @@ summary,
 [type='submit'],
 [type='checkbox'] {
 	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.fadeIn {
+	opacity: 1;
+	animation: fadeIn 0.2s linear;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

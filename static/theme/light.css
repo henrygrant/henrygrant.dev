@@ -1,5 +1,6 @@
 :root {
 	--text-color: #000;
+	--link-color: #3a873d;
 	--background-color: #fff;
-	--tint-color: rgba(255, 255, 255, .6);
+	--tint-color: rgba(255, 255, 255, 0.6);
 }
