@@ -7,7 +7,7 @@
 	import VectorSource from 'ol/source/Vector';
 	import { Style, Stroke } from 'ol/style';
 	import Polyline from 'ol/format/Polyline';
-	import {theme} from '$lib/store'
+	import { theme } from '$lib/store';
 
 	export let activities: any[];
 
@@ -26,7 +26,12 @@
 		}
 	};
 
-	$: themeToUse = $theme === 'system' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : $theme
+	$: themeToUse =
+		$theme === 'system'
+			? window.matchMedia('(prefers-color-scheme: dark)').matches
+				? 'dark'
+				: 'light'
+			: $theme;
 
 	const setupMap = (node: HTMLDivElement, _id: string) => {
 		map = new Map({
@@ -77,7 +82,7 @@
 </script>
 
 {#key themeToUse}
-	<div id="map" use:setupMap={'map'}/>
+	<div id="map" use:setupMap={'map'} />
 {/key}
 
 <style>
