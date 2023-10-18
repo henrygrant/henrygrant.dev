@@ -16,7 +16,7 @@
 			rides to breweries or other interesting places in around NYC.
 		</p>
 		<p>
-			I love building things, and I love hanging out with other people who love building things. If
+			I love building things and I love hanging out with other people who love building things. If
 			you're in the NYC area, <a href="mailto:me@henrygrant.dev">drop me a line</a>. I'd love to
 			hear about what you're working on.
 		</p>
@@ -26,7 +26,7 @@
 		<p>
 			My main grind is brownfielding-turned-rewriting a couple of legacy native mobile applications
 			into one React Native application for Ally. I also write a lot of tooling and automation for
-			the the Core Mobile team, as well some tools for the enterprise at large.
+			the the Core Mobile team as well some tools for the enterprise at large.
 		</p>
 		<p>
 			I also work on <a href="https://github.com/henrygrant/ridemapper-svelte">Ridemapper</a> in my free
@@ -35,12 +35,12 @@
 			to have you!
 		</p>
 		<p>
-			This site uses some of the code/data from Ridemapper. You can see the background of this site
-			is a map of NYC. The lines on top of the map are all the places I've biked or ran since I
-			moved here in 2022. It gets updated as I add more activities to Strava.
+			This site uses some of the code/data from Ridemapper. The lines on top of the map are all the
+			runs and bike rides i've taken since I moved here. It gets updated as I add more activities to
+			Strava.
 		</p>
 		<p>
-			The next project I have on my mind is a mobile app that will capture run/ride data witout the
+			The next project I have on my mind is a mobile app that will capture run/ride data without the
 			need for Strava. I've learned a lot about mobile dev in the last year or two and want to put
 			that to use.
 		</p>
@@ -52,34 +52,34 @@
 			<div>
 				<p>
 					At my first real gig I worked on a large Python/MySQL application with a AngularJS
-					frontend on a fairly small team. We did a good amount of reporting and data visualization
-					stuff, and the app ran on Digital Ocean VMs with the deployment scripts and cronjobs were
-					hand-written in bash.
+					frontend on a fairly small team. We did a lot of app dev as well as a good amount of
+					reporting and data visualization-type stuff. The app ran on Digital Ocean VMs and the
+					deployment scripts and cronjobs were all bash.
 				</p>
 				<p>
-					If I were to still work on this app today, there's a <i>number</i> of things i'd do differently,
+					If I were to still work on this app today there's a <i>number</i> of things i'd do differently,
 					but I got a ton of experience from it. I wrote a ton of bad Javascript, then good Javascript,
 					and later some good Typescript. I learned the whole CSS spec, wrote build steps to support
 					preprocessors, wrote basic CI/CD pipelines to minify and test our code before deployment, etc.
 				</p>
 				<p>
 					I did a fair amount of backend work here as well. Our frontend was a dumpster fire and we
-					knew it, but we took pride in the setup of the database and the Python app. I got really
-					slick at writing SQL queries for reporting and data visualization to for the higher-ups,
-					writing bash to automate stuff on my machine and on the server, and writing Python scripts
-					to do the same thing when the bash scripts got too wild. I used Jupyter, Pandas, and Numpy
-					to make pretty graphs.
+					knew it, but we took pride in the setup of the database and the Python backend. I got
+					really slick at writing SQL queries for reporting and data visualization to for the
+					higher-ups, writing bash to automate stuff on my machine and on the server, and writing
+					Python scripts to do the same thing when the bash scripts got too wild. I used Jupyter,
+					Pandas, and Numpy to make pretty graphs.
 				</p>
 				<p>
-					We also all ran Debian on our machines, so I was basically forced to learn how to do
-					things the "hard" (correct) way. Tools like git, ssh, curl, etc are all etched into my
-					brain and I still use them <i>all the time</i>.
+					We also all ran Debian or Ubuntu on our machines, so I was basically forced to learn how
+					to do things the "hard" (correct) way. Tools like git, ssh, curl, etc are all etched into
+					my brain and I still use them <i>all the time</i>.
 				</p>
 				<p>
 					I didn't really realize it then, but these skills would stay in my toolkit for the rest of
-					my career. Without this job, I don't think I'd be nearly as well-rounded as I am now, and
-					I don't think i'd have developed my love of devops and infrastructure that a lot of
-					younger developers today have big knowledge gaps on.
+					my career. Without this job I don't think I'd be nearly as well-rounded as I am now, and I
+					don't think i'd have developed my love of devops and infrastructure that a lot of younger
+					developers today have big knowledge gaps on.
 				</p>
 			</div>
 		</div>
@@ -89,28 +89,27 @@
 			<div>
 				<p>
 					In early 2020 I moved states and wanted to try something new. I found a company that had
-					an existing application that managed inventory and ordering for businesses in the "home
-					renovation" space. Think of a "Sally's Showroom" that you go to to pick out everything
-					you're going to put in your new bathroom, from the tub and toilet to the tiles and cabinet
+					an existing application that managed inventory and ordering for businesses in the home
+					renovation space. Think of a "Sally's Showroom" that you go to to pick out everything
+					you're going to put in your new bathroom from the tub and toilet to the tiles and cabinet
 					handles.
 				</p>
 				<p>
 					The company was looking to expand into doing ecommerce for these businesses, and I was
-					hired to build the front end along side a backend dev who was brought on to build out any
-					endpoints we needed that didn't already exist to support this effort. During the interview
-					process, I pitched a "how I'd do it" to the CEO and CTO, which was a Vue/NuxtJS setup that
-					could serve a site per client with a shared codebase for the core functionality. They
-					liked it, and I was hired.
+					hired to build the front end along side a backend dev who was there to build out any
+					endpoints we needed for the project. During the interview process, I pitched a "how I'd do
+					it" to the CEO and CTO, which was a Vue/NuxtJS setup that could serve a site per client
+					with a shared codebase for the core functionality that they liked the sound of.
 				</p>
 				<p>
-					This was a fun experience, as I was given the freedom to build out something from scratch.
+					This was a fun experience as I was given the freedom to build out something from scratch.
 					I really loved working on making tools and automation for my team to be able to work
 					faster and more efficiently. Despite it being a front end project, those tools and
 					deployment configuration for a "backend for the frontend" setup like Nuxt scratched the my
 					itch for doing automation/tooling/devops work. I learned a lot on this project, managed a
 					team for the first time, and got to work with more modern web tools that I'd been yearning
 					for at my last job. This was also the first time I got to get to use a bunch of new cloud
-					services (GCP) for something bigger than just a side project. for
+					services (GCP) for something bigger than just a side project.
 				</p>
 			</div>
 		</div>
