@@ -11,9 +11,7 @@
 	<section>
 		<p>
 			I moved to New York City in 2022 and currently reside in Greenpoint. I'm into riding bikes,
-			running, woodworking, and building software. I volunteer for
-			<a href="https://nycbikeandbrew.com/">NYC Bike + Brew</a>, a group that takes people on bike
-			rides to breweries or other interesting places in around NYC.
+			running, woodworking, and building software.
 		</p>
 		<p>
 			I love building things and I love hanging out with other people who love building things. If
@@ -24,25 +22,15 @@
 	<section>
 		<h2>Current Projects</h2>
 		<p>
-			My main grind is brownfielding-turned-rewriting a couple of legacy native mobile applications
-			into one React Native application for Ally. I also write a lot of tooling and automation for
-			the the Core Mobile team as well some tools for the enterprise at large.
+			My main focus right now is the "Mobile Reimagined" project at Ally Bank. In 2023 we
+			successfully brownfielded React Native into the existing native app, and we're currently
+			working on rewriting and consolidating legacy code, automating processes, and modularizing our
+			codebase for the enablement of many teams to work at the same time without stepping on each
+			other's toes.
 		</p>
 		<p>
-			I also work on <a href="https://github.com/henrygrant/ridemapper-svelte">Ridemapper</a> in my free
-			time, an application that takes your data from Strava and draws it on a customizable, shareable
-			map. I add features to this when I have time, though if you're interested in contributing I'd love
-			to have you!
-		</p>
-		<p>
-			This site uses some of the code/data from Ridemapper. The lines on top of the map are all the
-			runs and bike rides i've taken since I moved here. It gets updated as I add more activities to
-			Strava.
-		</p>
-		<p>
-			The next project I have on my mind is a mobile app that will capture run/ride data without the
-			need for Strava. I've learned a lot about mobile dev in the last year or two and want to put
-			that to use.
+			In my free time I've been working on a project I'm not quite ready to talk about yet.
+			Additionally, i've been writing a lot of services and tools in Golang and some HTMX frontends.
 		</p>
 	</section>
 	<section>
@@ -165,10 +153,12 @@
 					Additionally, there has been a ton of devex/devops work to do as we have drastically
 					changed how the app is built and how folks work on it. I've spent a lot of time working on
 					the pipelines and tooling for the other devs, and was promoted to Mobile Devops lead in
-					the middle of 2023 and manage that team and their priorities. Currently I'm wearing
-					multiple hats, as I stil spend a lot of my time on the core integration, but I am grateful
-					to have an excellent group of developers around me. I look forward to shipping this at the
-					end of 2023.
+					the middle of 2023 and manage that team and their priorities.
+				</p>
+				<p>
+					At the beginning of 2024 we successfully shipped the first MVP on Mobile Reimagined, and
+					will continute working on modernizing the rest of the application for the forseeable
+					future.
 				</p>
 			</div>
 		</div>

@@ -40,9 +40,11 @@
 				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 					<a href="/" class={$page.url.pathname === '/' ? 'selected' : undefined}>Home</a>
 				</li>
-				<li aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined}>
-					<a href="/about" class={$page.url.pathname.startsWith('/about') ? 'selected' : undefined}
-						>About</a
+				<li aria-current={$page.url.pathname.startsWith('/photography') ? 'page' : undefined}>
+					<a
+						href="/photography"
+						class={$page.url.pathname.startsWith('/photography') ? 'selected' : undefined}
+						>Photography</a
 					>
 				</li>
 				<li aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined}>
@@ -50,10 +52,9 @@
 						>Blog</a
 					>
 				</li>
-				<li aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined}>
-					<a
-						href="/contact"
-						class={$page.url.pathname.startsWith('/contact') ? 'selected' : undefined}>Contact</a
+				<li aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined}>
+					<a href="/about" class={$page.url.pathname.startsWith('/about') ? 'selected' : undefined}
+						>About</a
 					>
 				</li>
 			</ul>
