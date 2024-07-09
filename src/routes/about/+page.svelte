@@ -11,7 +11,7 @@
 	<section>
 		<p>
 			I moved to New York City in 2022 and currently reside in Greenpoint. I'm into riding bikes,
-			running, woodworking, and building software.
+			running, woodworking, gardening, and building software.
 		</p>
 		<p>
 			I love building things and I love hanging out with other people who love building things. If
